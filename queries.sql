@@ -87,3 +87,28 @@ JOIN
     orders o ON c.customer_id = o.customer_id
 GROUP BY 
     c.customer_name;
+--8. query to rank customers by their total spending
+
+SELECT 
+    c.customer_id,
+    SUM(o.total_amount) AS total,
+    RANK() OVER (ORDER BY SUM(o.total_amount) DESC) AS spending_rank
+FROM 
+    customers c
+JOIN 
+    orders o ON c.customer_id = o.customer_id
+GROUP BY 
+    c.customer_id;
+
+-- 9. query to calculate the cumulative revenue per product
+
+SELECT 
+    p.name AS product_name, 
+    oi.price, 
+    oi.quantity, 
+    (oi.price * oi.quantity) AS revenue, 
+    SUM(oi.price * oi.quantity) OVER (PARTITION BY p.name ORDER BY oi.order_id) AS cumulative_revenue
+FROM 
+    products p
+JOIN 
+    order_items oi ON p.product_id = oi.product_id;
