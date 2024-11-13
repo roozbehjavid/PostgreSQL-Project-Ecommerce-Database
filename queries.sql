@@ -72,8 +72,7 @@ SELECT p.name,
 FROM products p
 JOIN order_items oi ON p.product_id = oi.product_id
 GROUP BY p.name
-ORDER BY total_revenue DESC
-LIMIT 3;
+ORDER BY total_revenue DESC;
 
 -- 7.query to result in total orders, average order amount and largest order amount
 
