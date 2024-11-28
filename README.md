@@ -11,8 +11,8 @@ This is a simple ecommerce database system built using PostgreSQL. It consists o
 
 ## Files
 
-- `schema.sql`: Contains SQL code to create the tables.
-- `sample_data.sql`: Sample data insertion queries for populating the tables.
+- `create_tables.sql`: Contains SQL code to create the tables.
+- `insert_data.sql`: Sample data insertion queries for populating the tables.
 - `queries.sql`: SQL queries written for analysis, including complex queries for sales reports.
 
 ## Usage
