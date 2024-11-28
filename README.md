@@ -20,8 +20,8 @@ This is a simple ecommerce database system built using PostgreSQL. It consists o
 1. Clone the repository to your local machine.
 2. Open the PostgreSQL database client.
 3. Run the SQL scripts in the order:
-   - First, run `schema.sql` to create the tables.
-   - Then, run `sample_data.sql` to insert the sample data.
+   - First, run `create_tables.sql` to create the tables.
+   - Then, run `insert_data.sql` to insert the sample data.
    - Finally, use `queries.sql` for analysis.
 
 ## License
