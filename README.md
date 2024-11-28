@@ -29,5 +29,7 @@ This is a simple ecommerce database system built using PostgreSQL. It consists o
 This project is open-source and available under the MIT License.
 
 ## Technologies Used
-Language: PLpgSQL
+
+-	Database: PostgreSQL
+-	Language: SQL
 
