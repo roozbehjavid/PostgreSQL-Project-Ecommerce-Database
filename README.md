@@ -30,6 +30,5 @@ This project is open-source and available under the MIT License.
 
 ## Technologies Used
 
--	Database: PostgreSQL
 -	Language: SQL
-
+-	Database: PostgreSQL
